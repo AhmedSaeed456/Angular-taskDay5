@@ -11,11 +11,33 @@
 
   </style>
 </head>
-<div class="alert alert-success">
+<!-- <div class="alert alert-success">
   <h5>Name : {{oneStudent.name}}</h5>
   <h5>Email : <a routerLink="/students/{{oneStudent.id}}"> {{oneStudent.email}} </a></h5>
   <div class="d-flex text-center justify-content-center p-2 m-2">
     <h5 id="up" class=" m-2 border border-success rounded p-1 shadow"><a class="text-success text-decoration-none" routerLink="/updateStudent/{{oneStudent.id}}">Update</a></h5>
     <h5 id="del" class=" m-2 border border-danger rounded p-1 shadow"><a class="text-danger text-decoration-none" routerLink="/delete/{{oneStudent.id}}">Delete</a></h5>
   </div>
-</div>
+</div> -->
+<table class="table table-bordered table-light rounded border border-secondary w-75 m-auto fs-5">
+  <tbody>
+    <tr>
+      <th scope="row">Name</th>
+      <td >{{oneStudent.name}}</td>
+    </tr>
+    <tr>
+      <th scope="row">Email</th>
+      <td>{{oneStudent.email}}</td>
+    </tr>
+    <tr>
+      <th scope="row">Actions</th>
+      <td>
+        <div class="d-flex justify-content-center align-items-center">
+          <a id="up" class="btn btn-success m-2" routerLink="/updateStudent/{{oneStudent.id}}">Update</a>
+          <a id="del" class="btn btn-danger m-2" routerLink="/delete/{{oneStudent.id}}">Delete</a>
+          <a class="btn btn-primary m-2" routerLink="/students/{{oneStudent.id}}">Details</a>
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
