@@ -1,13 +1,46 @@
-<div *ngIf="studentInfo;else loadingBlock" class="alert alert-info">
+<!-- <div *ngIf="studentInfo;else loadingBlock" class="alert alert-info">
   <h5>Name: {{studentInfo.name}}</h5>
   <h5>Age: {{studentInfo.age}}</h5>
   <h5>Email: {{studentInfo.email}}</h5>
   <h5>Phone : {{studentInfo.phone}}</h5>
-  <h5>Courses: </h5>
+  <h5>Courses: {{studentInfo.courses}}</h5>
   <h5 *ngFor="let c of studentInfo.courses; let i = index">
     <h5>Course {{i+1}} : {{c}}</h5>
   </h5>
+</div> -->
+<div *ngIf="studentInfo; else loadingBlock" class="alert alert-primary">
+  <table class="table table-striped table-bordered table-hover">
+    <tbody>
+      <tr>
+        <th scope="row" class="bg-info text-white">Name</th>
+        <td>{{studentInfo.name}}</td>
+      </tr>
+      <tr>
+        <th scope="row" class="bg-info text-white">Age</th>
+        <td>{{studentInfo.age}}</td>
+      </tr>
+      <tr>
+        <th scope="row" class="bg-info text-white">Email</th>
+        <td>{{studentInfo.email}}</td>
+      </tr>
+      <tr>
+        <th scope="row" class="bg-info text-white">Phone</th>
+        <td>{{studentInfo.phone}}</td>
+      </tr>
+      <tr>
+        <th scope="row" class="bg-info text-white">Courses</th>
+        <td>
+          <ul>
+            <li *ngFor="let c of studentInfo.courses; let i = index">Course {{i+1}}: {{c}}</li>
+          </ul>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 </div>
+
+
+
 
 <ng-template #loadingBlock>
   <h1 style="color:red;">..loading</h1>

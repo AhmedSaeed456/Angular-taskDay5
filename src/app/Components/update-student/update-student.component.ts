@@ -11,6 +11,7 @@ import {ActivatedRoute} from '@angular/router'
 export class UpdateStudentComponent implements OnInit {
   ID: any;
   studentInfo: any;
+  coursesArr: any;
   constructor(ActivatedStudent: ActivatedRoute,private myService: StudentsService) {
     this.ID = ActivatedStudent.snapshot.params["id"];
   }
@@ -23,7 +24,8 @@ export class UpdateStudentComponent implements OnInit {
       })
   }
   Update(name: any, age: any, email: any, phone: any, courses: any) {
-    let newStudent = { name, age, email, phone, courses }
+    this.coursesArr = courses.split(',');
+    let newStudent = { name, age, email, phone, courses:this.coursesArr }
 
     this.myService.updateStudentById(this.ID, newStudent).subscribe()
   }

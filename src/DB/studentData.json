@@ -5,7 +5,11 @@
       "age": "22",
       "email": "a@gmail.com",
       "phone": "0100",
-      "courses": "1,2,3",
+      "courses": [
+        "id1",
+        "id2",
+        "id3"
+      ],
       "id": 1
     },
     {
@@ -13,7 +17,11 @@
       "age": "20",
       "email": "al@gmail.com",
       "phone": "123",
-      "courses": "DB101,IT55,CS13",
+      "courses": [
+        "DB101",
+        "IT55",
+        "CS13"
+      ],
       "id": 2
     },
     {
@@ -34,18 +42,6 @@
       "age": "19",
       "email": "hamada@gmail.com",
       "phone": "456",
-      "courses": [
-        "DB101",
-        "IT55",
-        "CS13"
-      ]
-    },
-    {
-      "id": 5,
-      "name": "koko",
-      "age": "15",
-      "email": "koko@gmail.com",
-      "phone": "9",
       "courses": [
         "DB101",
         "IT55",
