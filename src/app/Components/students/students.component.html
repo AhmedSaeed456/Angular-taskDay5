@@ -1,0 +1,6 @@
+<!-- <div *ngFor="let s of students" class="alert alert-success">
+  <h5>Name : {{s.name}}</h5>
+  <h5>Email : <a routerLink="/students/{{s.id}}"> {{s.email}} </a></h5>
+</div> -->
+
+<app-student-item [oneStudent]="s" *ngFor="let s of students"></app-student-item>

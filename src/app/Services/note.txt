@@ -1,0 +1,17 @@
+all requests u can handle
+@injectable
+بمعنى ان السيرفسيس دي لما بحتاجها بعملها انجيكت في الكومبونانت اللي عاوز يستخدمها
+3 ways to inject :
+1. constructor
+2. method
+3. property
+
+Q) How injection principle started??
+بدل ما اخد اوبجيكت من الكلاس اللي عاوز استخدم الميثود اللي جواه
+ممكن نعمل انترفيس و نعمل امبليمينت ليها
+
+steps:
+1. create components
+2. configuration routing
+3. create service [ng g s serviceName] ==> [All Requests & URL]
+4. API?? [jsonPlaceHolder]

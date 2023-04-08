@@ -1,0 +1,14 @@
+<div *ngIf="studentInfo;else loadingBlock" class="alert alert-info">
+  <h5>Name: {{studentInfo.name}}</h5>
+  <h5>Age: {{studentInfo.age}}</h5>
+  <h5>Email: {{studentInfo.email}}</h5>
+  <h5>Phone : {{studentInfo.phone}}</h5>
+  <h5>Courses: </h5>
+  <h5 *ngFor="let c of studentInfo.courses; let i = index">
+    <h5>Course {{i+1}} : {{c}}</h5>
+  </h5>
+</div>
+
+<ng-template #loadingBlock>
+  <h1 style="color:red;">..loading</h1>
+</ng-template>

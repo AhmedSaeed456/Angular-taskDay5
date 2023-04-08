@@ -1,0 +1,56 @@
+{
+  "students": [
+    {
+      "name": "ahmed",
+      "age": "22",
+      "email": "a@gmail.com",
+      "phone": "0100",
+      "courses": "1,2,3",
+      "id": 1
+    },
+    {
+      "name": "ali",
+      "age": "20",
+      "email": "al@gmail.com",
+      "phone": "123",
+      "courses": "DB101,IT55,CS13",
+      "id": 2
+    },
+    {
+      "id": 3,
+      "name": "Ibrahim",
+      "age": "30",
+      "email": "ibra@gmail.com",
+      "phone": "4353",
+      "courses": [
+        "DB101",
+        "IT55",
+        "CS13"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "hamada",
+      "age": "19",
+      "email": "hamada@gmail.com",
+      "phone": "456",
+      "courses": [
+        "DB101",
+        "IT55",
+        "CS13"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "koko",
+      "age": "15",
+      "email": "koko@gmail.com",
+      "phone": "9",
+      "courses": [
+        "DB101",
+        "IT55",
+        "CS13"
+      ]
+    }
+  ]
+}

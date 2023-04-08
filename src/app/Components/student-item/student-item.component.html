@@ -1,0 +1,21 @@
+<head>
+  <style>
+  #up:hover{
+      background-color:rgb(115, 252, 144);
+      transition:all 0.2s;
+  }
+  #del:hover{
+      background-color:rgb(252, 129, 140);
+      transition:all 0.2s;
+  }
+
+  </style>
+</head>
+<div class="alert alert-success">
+  <h5>Name : {{oneStudent.name}}</h5>
+  <h5>Email : <a routerLink="/students/{{oneStudent.id}}"> {{oneStudent.email}} </a></h5>
+  <div class="d-flex text-center justify-content-center p-2 m-2">
+    <h5 id="up" class=" m-2 border border-success rounded p-1 shadow"><a class="text-success text-decoration-none" routerLink="/updateStudent/{{oneStudent.id}}">Update</a></h5>
+    <h5 id="del" class=" m-2 border border-danger rounded p-1 shadow"><a class="text-danger text-decoration-none" routerLink="/delete/{{oneStudent.id}}">Delete</a></h5>
+  </div>
+</div>
